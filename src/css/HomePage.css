@@ -1,0 +1,125 @@
+::-webkit-scrollbar {
+  width: 6px;
+  height: 8px;
+  background: #ccc;
+  border-radius: 10px;
+}
+::-webkit-scrollbar-button {
+  display: none;
+}
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background: #797777;
+}
+::-webkit-scrollbar-track {
+  border-radius: 10px;
+  background: #ccc;
+}
+button {
+  padding: 7px 15px;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  background-color: #585656;
+}
+.todoListBox {
+  width: 800px;
+  height: 600px;
+  background-color: #3C3E4F;
+  border-radius: 10px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+}
+.todoListBox .header-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: #ccc 1px solid;
+}
+.todoListBox .header-box .header-left {
+  display: flex;
+  align-items: center;
+  color: #fff;
+}
+.todoListBox .header-box .header-left .header-addicon {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: #9999E6;
+  font-size: 30px;
+  line-height: 46px;
+  text-align: center;
+  margin-right: 20px;
+}
+.todoListBox .header-box .header-right .header-selectAll {
+  background-color: #C43F38;
+  margin-right: 10px;
+}
+.todoListBox .header-box .header-right .header-add {
+  background-color: #70B870;
+}
+.todoListBox .content {
+  margin-top: 50px;
+  height: 450px;
+  overflow-y: scroll;
+  padding-right: 10px;
+}
+.todoListBox .content .content-item {
+  display: flex;
+  justify-content: space-between;
+  background-color: #6B6F7D;
+  align-items: center;
+  padding: 5px 10px;
+  border-radius: 8px;
+  box-sizing: border-box;
+  margin-bottom: 15px;
+}
+.todoListBox .content .content-item .content-left {
+  position: relative;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  border: #ccc 1px solid;
+}
+.todoListBox .content .content-item .content-left span {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #ccc;
+}
+.todoListBox .content .content-item .content-left .span-hidden {
+  opacity: 0;
+}
+.todoListBox .content .content-item .content-input {
+  flex: 1;
+  margin: 0 20px;
+  outline: none;
+  background: transparent;
+  border: none;
+  border-bottom: #ccc 1px solid;
+  padding: 2px 5px;
+  color: #ccc;
+}
+.todoListBox .content .content-item .line-through {
+  color: rgba(255, 255, 255, 0.2);
+  text-decoration: line-through rgba(255, 255, 255, 0.8);
+}
+.todoListBox .content .content-item .content-right {
+  display: flex;
+  align-items: center;
+}
+.todoListBox .content .content-item .content-right p {
+  color: #ccc;
+}
+.todoListBox .content .content-item .content-right button {
+  margin-left: 20px;
+  background-color: #961f1f;
+}
